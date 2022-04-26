@@ -143,12 +143,12 @@ window.addEventListener("DOMContentLoaded", () => {
       {
         rule: "minLength",
         value: 2,
-        errorMessage: "Колличество символов меньше 2!",
+        errorMessage: "Количество символов меньше 2!",
       },
       {
         rule: "maxLength",
         value: 30,
-        errorMessage: "Колличество символов больше 30!",
+        errorMessage: "Количество символов больше 30!",
       },
       {
         rule: "required",
