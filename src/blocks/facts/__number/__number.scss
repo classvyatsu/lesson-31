@@ -1,0 +1,11 @@
+.facts__number {
+  margin-right: 1.6rem;
+  margin-left: 1.4rem;
+  @include font(900, 3.8rem, 140%);
+}
+
+@media (max-width: 48em) {
+  .facts__number {
+    display: none;
+  }
+}

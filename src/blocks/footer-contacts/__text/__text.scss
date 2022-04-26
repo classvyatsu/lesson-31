@@ -1,0 +1,9 @@
+.footer-contacts__text {
+  @include font(400, 1.7rem, 140%);
+}
+
+@media (max-width: 48em) {
+  .footer-contacts__text {
+    @include font(400, 3rem, 140%);
+  }
+}

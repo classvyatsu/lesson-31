@@ -1,0 +1,9 @@
+.delivery__wrap {
+  display: flex;
+}
+
+@media (max-width: 48em) {
+  .delivery__wrap {
+    flex-direction: column;
+  }
+}

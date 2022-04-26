@@ -1,0 +1,37 @@
+@media (max-width: 48em) {
+  .active {
+    display: flex;
+  }
+}
+
+.active__modal {
+  display: block;
+}
+
+.active__answer {
+  display: flex;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  padding-top: 0.35rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 48em) {
+  .noscroll {
+    overflow: hidden !important;
+    height: 100% !important;
+
+    & .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+    }
+  }
+  .just-validate-error-label:nth-child(3) {
+    margin-top: 4.3rem;
+  }
+}

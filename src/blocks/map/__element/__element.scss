@@ -1,0 +1,14 @@
+.map__element {
+  width: 100%;
+  height: 70.3rem;
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+@media (max-width: 48em) {
+  .map__element {
+    height: 58.8rem;
+  }
+}

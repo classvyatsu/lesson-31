@@ -1,0 +1,15 @@
+.slider {
+  &__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 48em) {
+  .slider__back {
+    display: none;
+  }
+}

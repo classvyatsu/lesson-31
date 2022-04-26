@@ -1,0 +1,36 @@
+.cart__wrap {
+  min-height: 54.5rem;
+  width: 28.1rem;
+  @include centered;
+  flex-direction: column;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .cart__wrap {
+    &:hover {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 33rem;
+      border: 0.1rem solid #f3f4f7;
+      box-shadow: 0 2rem 5.2rem -0.8rem rgba(0, 0, 0, 0.15);
+      border-radius: 1.6rem;
+      padding-bottom: 4.7rem;
+      padding-top: 5.5rem;
+      z-index: 100;
+
+      & .cart__button {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .cart__wrap {
+    max-width: 43.44vw;
+  }
+}

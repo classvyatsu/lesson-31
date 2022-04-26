@@ -1,0 +1,11 @@
+.form--position {
+  position: relative;
+  margin-bottom: -26.4rem;
+  z-index: 150;
+}
+
+@media (max-width: 48em) {
+  .form--position {
+    margin-bottom: 0;
+  }
+}

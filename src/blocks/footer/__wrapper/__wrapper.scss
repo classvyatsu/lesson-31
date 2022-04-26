@@ -1,0 +1,11 @@
+.footer__wrapper {
+  margin-right: 10.2rem;
+}
+
+@media (max-width: 48em) {
+  .footer__wrapper {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 2.9rem;
+  }
+}

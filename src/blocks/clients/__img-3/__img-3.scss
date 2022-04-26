@@ -1,0 +1,11 @@
+.clients__img-3 {
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+}
+@media (max-width: 48em) {
+  .clients__img-3 {
+    margin-top: 0.8rem;
+    margin-right: 0.2rem;
+    margin-left: 0.7rem;
+  }
+}

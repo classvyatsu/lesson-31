@@ -1,0 +1,12 @@
+.footer-contacts__img {
+  margin-top: 0.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 0.897rem;
+}
+
+@media (max-width: 48em) {
+  .footer-contacts__img {
+    display: none;
+  }
+}

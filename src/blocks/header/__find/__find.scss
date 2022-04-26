@@ -1,0 +1,10 @@
+.header__find {
+  width: 50.5rem;
+  height: 5.1rem;
+}
+
+@media (max-width: 48em) {
+  .header__find {
+    display: none;
+  }
+}

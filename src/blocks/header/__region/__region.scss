@@ -1,0 +1,10 @@
+.header__region {
+  @include vercen;
+  margin-right: 2.5rem;
+}
+
+@media (max-width: 48em) {
+  .header__region {
+    display: none;
+  }
+}

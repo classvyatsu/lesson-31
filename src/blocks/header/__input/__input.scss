@@ -1,0 +1,7 @@
+.header__input {
+  width: 100%;
+  height: 100%;
+  padding-left: 5rem;
+  padding-bottom: 0.4rem;
+  @include font(400, 1.6rem, 120%);
+}

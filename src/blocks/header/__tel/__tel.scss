@@ -1,0 +1,10 @@
+.header__tel {
+  @include vercen;
+  padding-right: 1rem;
+}
+
+@media (max-width: 48em) {
+  .header__tel {
+    display: none;
+  }
+}

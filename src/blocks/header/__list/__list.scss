@@ -1,0 +1,20 @@
+.header__list {
+  margin-bottom: 8.2rem;
+  li {
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 3.5rem;
+    }
+    &:last-child {
+      margin-bottom: 7rem;
+    }
+  }
+}
+
+.header__list:after {
+  content: "";
+  background-color: #e7eaef;
+  height: 0.2rem;
+  display: block;
+}

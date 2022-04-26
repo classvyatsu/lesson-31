@@ -1,0 +1,12 @@
+.header__country {
+  width: 8.1rem;
+  //   background: url("../img/header/arrow-select-black.svg");
+  //   background-size: 1.6rem;
+  //   background-position: right;
+  //   background-repeat: no-repeat;
+  @include font(500, 1.6rem, 140%);
+}
+
+// .header__country::-webkit-calendar-picker-indicator {
+//   opacity: 0;
+// }

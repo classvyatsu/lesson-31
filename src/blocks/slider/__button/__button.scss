@@ -1,0 +1,9 @@
+.slider__button {
+  @include font(600, 1.8rem, 130%);
+  padding: 2.6rem 4.95rem 3rem;
+}
+@media (max-width: 48em) {
+  .slider__button {
+    display: none;
+  }
+}

@@ -1,0 +1,15 @@
+.form__checkbox {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  margin: -0.1rem;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  &:checked + .form__text::before {
+    background: #576077 url("../img/form/check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+}

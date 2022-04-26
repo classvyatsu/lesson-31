@@ -1,0 +1,13 @@
+.header-logo__text {
+  @include font(normal, 1rem, 150%);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 48em) {
+  .header-logo__text {
+    @include font(normal, 1.6rem, 150%);
+    padding-left: 1.8vw;
+  }
+}

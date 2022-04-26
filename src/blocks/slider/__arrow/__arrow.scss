@@ -1,0 +1,16 @@
+.slider__arrow {
+  width: 5rem;
+  height: 5rem;
+  @include centered;
+
+  img {
+    width: 30%;
+    height: 30%;
+  }
+}
+
+@media (max-width: 48em) {
+  .slider__arrow {
+    display: none;
+  }
+}

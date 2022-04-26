@@ -1,0 +1,9 @@
+.catalog__cart {
+  position: relative;
+}
+
+@media (max-width: 48em) {
+  .catalog__cart:nth-child(-n + 2) {
+    display: none;
+  }
+}

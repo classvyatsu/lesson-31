@@ -1,0 +1,16 @@
+.select__item {
+  @include font(500, 1.6rem, 140%);
+  padding-right: 2rem;
+  padding-left: 2rem;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .select__item {
+    &:hover {
+      background-color: #0074d4;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.form__label {
+  display: inline-block;
+  position: relative;
+  width: 42.3rem;
+  height: 8.1rem;
+  z-index: 100;
+
+  &:nth-child(1) {
+    .form__input--style {
+      background: url("../img/form/user.svg") #576077;
+      background-repeat: no-repeat;
+      background-size: 2.4rem;
+      background-position-y: 50%;
+      background-position-x: 3.4rem;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    .form__input--style {
+      background: url("../img/form/phone.svg") #576077;
+      background-repeat: no-repeat;
+      background-size: 2.4rem;
+      background-position-y: 50%;
+      background-position-x: 3.4rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .form__label {
+    width: 50rem;
+    height: 13rem;
+    &:nth-child(1) {
+      .form__input--style {
+        background: #576077 url(../img/form/user.svg);
+        background-size: 4.5rem;
+        background-repeat: no-repeat;
+        background-position-y: 46%;
+        background-position-x: 3.8rem;
+      }
+    }
+    &:nth-child(2) {
+      margin: 2rem 0 2rem 0;
+      .form__input--style {
+        background: #576077 url(../img/form/phone.svg);
+        background-size: 4.5rem;
+        background-repeat: no-repeat;
+        background-position-y: 46%;
+        background-position-x: 3.8rem;
+      }
+    }
+  }
+}

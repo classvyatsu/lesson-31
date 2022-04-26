@@ -1,0 +1,13 @@
+.facts__description {
+  font-family: "Manrope", sans-serif;
+  @include font(399, 2.2rem, 170%);
+  text-align: center;
+  margin-bottom: 5.4rem;
+}
+
+@media (max-width: 48em) {
+  .facts__description {
+    @include font(400, 2.67rem, 165%);
+    margin-bottom: 4.5rem;
+  }
+}

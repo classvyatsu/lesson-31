@@ -1,0 +1,12 @@
+.delivery__link {
+  @include font(400, 1.5rem, 150%);
+  display: inline-block;
+  border-bottom: .1rem dashed #E7EAEF;
+}
+
+@media (max-width: 48em) {
+  .delivery__link {
+    @include font(400, 2.6rem, 150%);
+    border-bottom: .2rem dashed #E7EAEF;
+  }
+}

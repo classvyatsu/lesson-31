@@ -1,0 +1,5 @@
+.header__catalog {
+  @include vercen;
+  margin-right: 4.25rem;
+  @include font(600, 1.7rem, 140%);
+}

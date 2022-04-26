@@ -1,0 +1,13 @@
+.form__button {
+  padding: 2.6rem 7rem 3rem;
+  @include font(600, 1.8rem, 140%);
+  position: relative;
+  z-index: 100;
+}
+
+@media (max-width: 48em) {
+  .form__button {
+    font-size: 3.2rem;
+    padding: 4rem 11.6rem 4.2rem;
+  }
+}

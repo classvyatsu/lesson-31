@@ -1,0 +1,14 @@
+.footer-logo__text {
+  @include font(400, 1rem, 150%);
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-left: -4.5rem;
+}
+
+@media (max-width: 48em) {
+  .footer-logo__text {
+    @include font(400, 2rem, 150%);
+    margin-left: -21.8rem;
+  }
+}

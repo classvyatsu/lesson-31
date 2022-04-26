@@ -1,0 +1,15 @@
+.modal__done {
+  width: 35rem;
+  height: 35rem;
+  position: absolute;
+  left: 50%;
+  top: -14.75rem;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 48em) {
+  .modal__done {
+    width: 55vw;
+    height: 55vw;
+  }
+}

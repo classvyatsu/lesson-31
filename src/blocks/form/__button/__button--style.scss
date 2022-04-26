@@ -1,0 +1,14 @@
+.form__button--style {
+  background: #0074d4;
+  box-shadow: 0 4.3rem 5.1rem rgba(0, 116, 212, 0.2),
+    0 1.29632rem 1.5375rem rgba(0, 116, 212, 0.241),
+    0 0.538427rem 0.638599rem rgba(0, 116, 212, 0.15),
+    0 0.194738rem 0.230969rem rgba(0, 116, 212, 0.059);
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 48em) {
+  .form__button--style {
+    border-radius: 1.6rem;
+  }
+}

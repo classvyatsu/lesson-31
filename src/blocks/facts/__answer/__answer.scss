@@ -1,0 +1,18 @@
+.facts__answer {
+  padding-left: 1rem;
+  padding-right: 6.7rem;
+  padding-bottom: 3.3rem;
+  @include font(400, 1.9rem, 140%);
+  display: none;
+}
+
+@media (max-width: 48em) {
+  .facts__answer {
+    font-size: 2.6rem;
+    line-height: 123%;
+    padding-right: 0;
+    padding-left: 0rem;
+    padding-top: 2.8rem;
+    padding-bottom: 0.3rem;
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  padding-top: 6.3rem;
+  padding-bottom: 6.5rem;
+  background-color: #191e32;
+}
+
+@media (max-width: 48em) {
+  .footer {
+    padding-top: 7.8rem;
+    padding-bottom: 16rem;
+  }
+}

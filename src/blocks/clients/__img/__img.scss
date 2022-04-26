@@ -1,0 +1,9 @@
+.clients__img {
+  display: grid;
+  grid-template-columns: repeat(6, 19.5rem);
+}
+@media (max-width: 48em) {
+  .clients__img {
+    grid-template-columns: repeat(2, 28rem);
+  }
+}

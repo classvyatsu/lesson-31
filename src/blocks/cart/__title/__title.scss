@@ -1,0 +1,11 @@
+.cart__title {
+  @include font(400, 2rem, 130%);
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 48em) {
+  .cart__title {
+    @include font(400, 4.38vw, 130%);
+    margin-bottom: 0.94vw;
+  }
+}

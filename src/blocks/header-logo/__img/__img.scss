@@ -1,0 +1,12 @@
+.header-logo__img {
+  padding-top: 0.3rem;
+}
+@media (max-width: 48em) {
+  .header-logo__img {
+    width: 51.8vw;
+    height: 7.5vw;
+    margin-left: -11.5vw;
+    margin-bottom: -1vw;
+    margin-top: -1vw;
+  }
+}

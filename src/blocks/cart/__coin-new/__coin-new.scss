@@ -1,0 +1,10 @@
+.cart__coin-new {
+  @include font(900, 2.8rem, 140%);
+}
+
+@media (max-width: 48em) {
+  .cart__coin-new {
+    @include font(900, 6.25vw, 140%);
+    letter-spacing: -0.05em;
+  }
+}

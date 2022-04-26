@@ -1,0 +1,9 @@
+.drive__img {
+  display: none;
+}
+
+@media (max-width: 48em) {
+  .drive__img {
+    display: block;
+  }
+}

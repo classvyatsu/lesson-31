@@ -1,0 +1,23 @@
+.footer__text {
+  @include font(500, 1.4rem, 140%);
+  margin-left: -0.3rem;
+
+  span {
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .footer__text {
+    position: absolute;
+    top: 69.4rem;
+    display: block;
+    @include font(500, 2.6rem, 140%);
+
+    span {
+      display: block;
+      margin-bottom: 1.2rem;
+    }
+  }
+}

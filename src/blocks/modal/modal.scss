@@ -1,0 +1,12 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-top: 20.4rem;
+  padding-bottom: 3rem;
+  z-index: 200;
+  display: none;
+}
