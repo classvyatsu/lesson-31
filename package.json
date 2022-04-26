@@ -1,5 +1,5 @@
 {
-  "name": "lesson-30",
+  "name": "lesson-31",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^3.0.0",
     "sass": "^1.49.9"
   },
   "dependencies": {
@@ -24,11 +25,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/classvyatsu/lesson-30.git"
+    "url": "git+https://github.com/classvyatsu/lesson-31.git"
   },
   "bugs": {
-    "url": "https://github.com/classvyatsu/lesson-30/issues"
+    "url": "https://github.com/classvyatsu/lesson-31/issues"
   },
-  "homepage": "https://github.com/classvyatsu/lesson-30#readme",
+  "homepage": "https://github.com/classvyatsu/lesson-31#readme",
   "description": ""
 }

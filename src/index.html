@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/favicon/favicon.ico" />
-    <script defer src="js/inputmask.min.js"></script>
+    <!-- <script defer src="js/inputmask.min.js"></script>
     <script defer src="js/just-validate.min.js"></script>
     <script defer src="js/swiper-bundle.js"></script>
     <script src="js/aos.js"></script>
     <script defer src="js/jquery-3.6.0.min.js"></script>
-    <script defer src="js/script.js"></script>
+    <script defer src="js/script.js"></script> -->
     <title>ОфисДирект</title>
   </head>
 
@@ -24,16 +24,16 @@
           <div class="header__info">
             <div class="wrap-button">
               <button type="button" class="header__burger">
-                <img src="img/header/burger-mobile.svg" alt="" />
+                <img loading="lazy" src="img/header/burger-mobile.svg" alt="" />
               </button>
               <button type="button" class="header__cross">
-                <img src="img/header/cross.svg" alt="" />
+                <img loading="lazy" src="img/header/cross.svg" alt="" />
               </button>
             </div>
 
             <a href="#" class="header-logo header__wrapper">
               <div class="header-logo__img">
-                <img src="img/header/logo.png" alt="" />
+                <img loading="lazy" src="img/header/logo.png" alt="" />
               </div>
               <div class="header-logo__text header-logo__text--color">
                 Кресла Samurai
@@ -48,7 +48,7 @@
             </div>
             <div class="header-tel header__tel">
               <div class="header-tel__img">
-                <img src="img/header/phone.svg" alt="" />
+                <img loading="lazy" src="img/header/phone.svg" alt="" />
               </div>
               <a
                 href="tel:+74952210675"
@@ -68,7 +68,12 @@
               <button
                 class="menu header__catalog header__catalog--color header__catalog--size-m"
               >
-                <img class="menu__img" src="img/header/burger.svg" alt="" />
+                <img
+                  loading="lazy"
+                  class="menu__img"
+                  src="img/header/burger.svg"
+                  alt=""
+                />
                 <span class="menu__text">Каталог</span>
               </button>
               <nav class="header__nav">
@@ -87,14 +92,18 @@
             <div class="header__shop">
               <div class="header__region">
                 <div class="header__gps">
-                  <img src="img/header/gps.svg" alt="" />
+                  <img loading="lazy" src="img/header/gps.svg" alt="" />
                 </div>
 
                 <div class="select">
                   <div class="select__categories">
                     <div class="select__header">
                       <span class="select__title">Москва</span>
-                      <img src="img/header/arrow-select-black.svg" alt="" />
+                      <img
+                        loading="lazy"
+                        src="img/header/arrow-select-black.svg"
+                        alt=""
+                      />
                     </div>
                     <ul class="select__body">
                       <li class="select__item">Новосибирск</li>
@@ -108,7 +117,7 @@
               </div>
               <div class="header-basket header__basket">
                 <div class="header-basket__img">
-                  <img src="img/header/shopping.svg" alt="" />
+                  <img loading="lazy" src="img/header/shopping.svg" alt="" />
                 </div>
                 <span class="header-basket__text">Моя корзина</span>
                 <div class="header-basket__count header-basket__count--size">
@@ -154,7 +163,11 @@
                     стране
                   </h1>
                   <div class="slider__flag">
-                    <img src="img/slider/russian-flag.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
                   </div>
                 </div>
 
@@ -178,22 +191,36 @@
               </div>
             </div>
             <div class="slider__back">
-              <img src="img/slider/slide-1.jpg" alt="" />
+              <picture loading="lazy">
+                <source srcset="img/slider/slide-1.avif" type="image/avif" />
+                <source srcset="img/slider/slide-1.webp" type="image/webp" />
+                <source srcset="img/slider/slide-1.jpg" type="image/jpg" />
+                <img src="img/slider/slide-1.jpg" alt="" />
+              </picture>
             </div>
             <div class="slider__back-mobile">
-              <img src="img/slider/slide-2.jpg" alt="#" />
+              <picture>
+                <source srcset="img/slider/slide-2.avif" type="image/avif" />
+                <source srcset="img/slider/slide-2.webp" type="image/webp" />
+                <source srcset="img/slider/slide-2.jpg" type="image/jpg" />
+                <img loading="lazy" src="img/slider/slide-2.jpg" alt="" />
+              </picture>
             </div>
           </div>
           <div class="slider__slide swiper-slide">
             <div class="container">
               <div class="slider__wrap">
                 <div class="slider__title">
-                  <h1 class="slider__header">
+                  <h1 class="slider__header" data-aos="fade-up">
                     Кресла Samurai <strong>на выгодных условиях</strong> по всей
                     стране
                   </h1>
                   <div class="slider__flag">
-                    <img src="img/slider/russian-flag.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
                   </div>
                 </div>
 
@@ -204,6 +231,7 @@
                 <button
                   type="button"
                   class="button slider__button button--style button-modal"
+                  data-aos="flip-up"
                 >
                   Запись на тест-драйв
                 </button>
@@ -216,22 +244,36 @@
               </div>
             </div>
             <div class="slider__back">
-              <img src="img/slider/slide-1.jpg" alt="" />
+              <picture loading="lazy">
+                <source srcset="img/slider/slide-1.avif" type="image/avif" />
+                <source srcset="img/slider/slide-1.webp" type="image/webp" />
+                <source srcset="img/slider/slide-1.jpg" type="image/jpg" />
+                <img src="img/slider/slide-1.jpg" alt="" />
+              </picture>
             </div>
             <div class="slider__back-mobile">
-              <img src="img/slider/slide-2.jpg" alt="#" />
+              <picture>
+                <source srcset="img/slider/slide-2.avif" type="image/avif" />
+                <source srcset="img/slider/slide-2.webp" type="image/webp" />
+                <source srcset="img/slider/slide-2.jpg" type="image/jpg" />
+                <img loading="lazy" src="img/slider/slide-2.jpg" alt="" />
+              </picture>
             </div>
           </div>
           <div class="slider__slide swiper-slide">
             <div class="container">
               <div class="slider__wrap">
                 <div class="slider__title">
-                  <h1 class="slider__header">
+                  <h1 class="slider__header" data-aos="fade-up">
                     Кресла Samurai <strong>на выгодных условиях</strong> по всей
                     стране
                   </h1>
                   <div class="slider__flag">
-                    <img src="img/slider/russian-flag.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
                   </div>
                 </div>
 
@@ -242,6 +284,7 @@
                 <button
                   type="button"
                   class="button slider__button button--style button-modal"
+                  data-aos="flip-up"
                 >
                   Запись на тест-драйв
                 </button>
@@ -254,22 +297,36 @@
               </div>
             </div>
             <div class="slider__back">
-              <img src="img/slider/slide-1.jpg" alt="" />
+              <picture loading="lazy">
+                <source srcset="img/slider/slide-1.avif" type="image/avif" />
+                <source srcset="img/slider/slide-1.webp" type="image/webp" />
+                <source srcset="img/slider/slide-1.jpg" type="image/jpg" />
+                <img src="img/slider/slide-1.jpg" alt="" />
+              </picture>
             </div>
             <div class="slider__back-mobile">
-              <img src="img/slider/slide-2.jpg" alt="#" />
+              <picture>
+                <source srcset="img/slider/slide-2.avif" type="image/avif" />
+                <source srcset="img/slider/slide-2.webp" type="image/webp" />
+                <source srcset="img/slider/slide-2.jpg" type="image/jpg" />
+                <img loading="lazy" src="img/slider/slide-2.jpg" alt="" />
+              </picture>
             </div>
           </div>
           <div class="slider__slide swiper-slide">
             <div class="container">
               <div class="slider__wrap">
                 <div class="slider__title">
-                  <h1 class="slider__header">
+                  <h1 class="slider__header" data-aos="fade-up">
                     Кресла Samurai <strong>на выгодных условиях</strong> по всей
                     стране
                   </h1>
                   <div class="slider__flag">
-                    <img src="img/slider/russian-flag.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
                   </div>
                 </div>
 
@@ -280,6 +337,7 @@
                 <button
                   type="button"
                   class="button slider__button button--style button-modal"
+                  data-aos="flip-up"
                 >
                   Запись на тест-драйв
                 </button>
@@ -292,22 +350,36 @@
               </div>
             </div>
             <div class="slider__back">
-              <img src="img/slider/slide-1.jpg" alt="" />
+              <picture loading="lazy">
+                <source srcset="img/slider/slide-1.avif" type="image/avif" />
+                <source srcset="img/slider/slide-1.webp" type="image/webp" />
+                <source srcset="img/slider/slide-1.jpg" type="image/jpg" />
+                <img src="img/slider/slide-1.jpg" alt="" />
+              </picture>
             </div>
             <div class="slider__back-mobile">
-              <img src="img/slider/slide-2.jpg" alt="#" />
+              <picture>
+                <source srcset="img/slider/slide-2.avif" type="image/avif" />
+                <source srcset="img/slider/slide-2.webp" type="image/webp" />
+                <source srcset="img/slider/slide-2.jpg" type="image/jpg" />
+                <img loading="lazy" src="img/slider/slide-2.jpg" alt="" />
+              </picture>
             </div>
           </div>
           <div class="slider__slide swiper-slide">
             <div class="container">
               <div class="slider__wrap">
                 <div class="slider__title">
-                  <h1 class="slider__header">
+                  <h1 class="slider__header" data-aos="fade-up">
                     Кресла Samurai <strong>на выгодных условиях</strong> по всей
                     стране
                   </h1>
                   <div class="slider__flag">
-                    <img src="img/slider/russian-flag.png" alt="" />
+                    <img
+                      loading="lazy"
+                      src="img/slider/russian-flag.png"
+                      alt=""
+                    />
                   </div>
                 </div>
 
@@ -318,6 +390,7 @@
                 <button
                   type="button"
                   class="button slider__button button--style button-modal"
+                  data-aos="flip-up"
                 >
                   Запись на тест-драйв
                 </button>
@@ -330,19 +403,29 @@
               </div>
             </div>
             <div class="slider__back">
-              <img src="img/slider/slide-1.jpg" alt="" />
+              <picture loading="lazy">
+                <source srcset="img/slider/slide-1.avif" type="image/avif" />
+                <source srcset="img/slider/slide-1.webp" type="image/webp" />
+                <source srcset="img/slider/slide-1.jpg" type="image/jpg" />
+                <img src="img/slider/slide-1.jpg" alt="" />
+              </picture>
             </div>
             <div class="slider__back-mobile">
-              <img src="img/slider/slide-2.jpg" alt="#" />
+              <picture>
+                <source srcset="img/slider/slide-2.avif" type="image/avif" />
+                <source srcset="img/slider/slide-2.webp" type="image/webp" />
+                <source srcset="img/slider/slide-2.jpg" type="image/jpg" />
+                <img loading="lazy" src="img/slider/slide-2.jpg" alt="" />
+              </picture>
             </div>
           </div>
         </div>
         <div class="slider__navigation">
           <div class="slider__arrow slider__arrow-left slider__arrow--style">
-            <img src="img/slider/arrow-left.svg" alt="" />
+            <img loading="lazy" src="img/slider/arrow-left.svg" alt="" />
           </div>
           <div class="slider__arrow slider__arrow-right slider__arrow--style">
-            <img src="img/slider/arrow-right.svg" alt="" />
+            <img loading="lazy" src="img/slider/arrow-right.svg" alt="" />
           </div>
         </div>
         <div class="slider__pagination"></div>
@@ -353,7 +436,11 @@
           <div class="delivery__wrap">
             <div class="delivery__item">
               <div class="delivery__img">
-                <img src="img/delivery/delivery-img-1.svg" alt="" />
+                <img
+                  loading="lazy"
+                  src="img/delivery/delivery-img-1.svg"
+                  alt=""
+                />
               </div>
               <div class="delivery__text">
                 <div class="delivery__diescription">
@@ -371,7 +458,11 @@
               data-aos-anchor-placement="bottom-bottom"
             >
               <div class="delivery__img">
-                <img src="img/delivery/delivery-img-2.svg" alt="" />
+                <img
+                  loading="lazy"
+                  src="img/delivery/delivery-img-2.svg"
+                  alt=""
+                />
               </div>
               <div class="delivery__text">
                 <div class="delivery__diescription">
@@ -385,7 +476,11 @@
             </div>
             <div class="delivery__item">
               <div class="delivery__img">
-                <img src="img/delivery/delivery-img-3.svg" alt="" />
+                <img
+                  loading="lazy"
+                  src="img/delivery/delivery-img-3.svg"
+                  alt=""
+                />
               </div>
               <div class="delivery__text">
                 <div class="delivery__diescription">
@@ -408,7 +503,7 @@
             <a href="#" class="cart catalog__cart cart--color">
               <div class="cart__wrap cart__wrap--color">
                 <div class="cart__img">
-                  <img src="img/cart/cart.png" alt="" />
+                  <img loading="lazy" src="img/cart/cart.png" alt="" />
                 </div>
                 <div class="cart__title cart__title--color">
                   Samurai KL-1.04 Темно-коричневый
@@ -417,6 +512,7 @@
                 <div class="cart__coin-old">
                   <span>27 000 ₽</span>
                   <img
+                    loading="lazy"
                     class="cart__coin-img"
                     src="img/cart/line-summ.svg"
                     alt=""
@@ -430,7 +526,7 @@
             <a href="#" class="cart catalog__cart cart--color">
               <div class="cart__wrap cart__wrap--color">
                 <div class="cart__img">
-                  <img src="img/cart/cart-2.png" alt="" />
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
                 </div>
                 <div class="cart__title cart__title--color">
                   Samurai KL-1.04 Темно-коричневый
@@ -439,6 +535,7 @@
                 <div class="cart__coin-old">
                   <span>27 000 ₽</span>
                   <img
+                    loading="lazy"
                     class="cart__coin-img"
                     src="img/cart/line-summ.svg"
                     alt=""
@@ -452,7 +549,7 @@
             <a href="#" class="cart catalog__cart cart--color">
               <div class="cart__wrap cart__wrap--color">
                 <div class="cart__img">
-                  <img src="img/cart/cart-2.png" alt="" />
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
                 </div>
                 <div class="cart__title cart__title--color">
                   Samurai KL-1.04 Темно-коричневый
@@ -461,6 +558,7 @@
                 <div class="cart__coin-old">
                   <span>27 000 ₽</span>
                   <img
+                    loading="lazy"
                     class="cart__coin-img"
                     src="img/cart/line-summ.svg"
                     alt=""
@@ -474,7 +572,7 @@
             <a href="#" class="cart catalog__cart cart--color">
               <div class="cart__wrap cart__wrap--color">
                 <div class="cart__img">
-                  <img src="img/cart/cart-2.png" alt="" />
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
                 </div>
                 <div class="cart__title cart__title--color">
                   Samurai KL-1.04 Темно-коричневый
@@ -483,6 +581,7 @@
                 <div class="cart__coin-old">
                   <span>27 000 ₽</span>
                   <img
+                    loading="lazy"
                     class="cart__coin-img"
                     src="img/cart/line-summ.svg"
                     alt=""
@@ -496,7 +595,7 @@
             <a href="#" class="cart catalog__cart cart--color">
               <div class="cart__wrap cart__wrap--color">
                 <div class="cart__img">
-                  <img src="img/cart/cart-2.png" alt="" />
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
                 </div>
                 <div class="cart__title cart__title--color">
                   Samurai KL-1.04 Темно-коричневый
@@ -505,6 +604,7 @@
                 <div class="cart__coin-old">
                   <span>27 000 ₽</span>
                   <img
+                    loading="lazy"
                     class="cart__coin-img"
                     src="img/cart/line-summ.svg"
                     alt=""
@@ -518,7 +618,7 @@
             <a href="#" class="cart catalog__cart cart--color">
               <div class="cart__wrap cart__wrap--color">
                 <div class="cart__img">
-                  <img src="img/cart/cart-2.png" alt="" />
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
                 </div>
                 <div class="cart__title cart__title--color">
                   Samurai KL-1.04 Темно-коричневый
@@ -527,6 +627,7 @@
                 <div class="cart__coin-old">
                   <span>27 000 ₽</span>
                   <img
+                    loading="lazy"
                     class="cart__coin-img"
                     src="img/cart/line-summ.svg"
                     alt=""
@@ -540,7 +641,7 @@
             <a href="#" class="cart catalog__cart cart--color">
               <div class="cart__wrap cart__wrap--color">
                 <div class="cart__img">
-                  <img src="img/cart/cart-2.png" alt="" />
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
                 </div>
                 <div class="cart__title cart__title--color">
                   Samurai KL-1.04 Темно-коричневый
@@ -549,6 +650,7 @@
                 <div class="cart__coin-old">
                   <span>27 000 ₽</span>
                   <img
+                    loading="lazy"
                     class="cart__coin-img"
                     src="img/cart/line-summ.svg"
                     alt=""
@@ -562,7 +664,7 @@
             <a href="#" class="cart catalog__cart cart--color">
               <div class="cart__wrap cart__wrap--color">
                 <div class="cart__img">
-                  <img src="img/cart/cart-2.png" alt="" />
+                  <img loading="lazy" src="img/cart/cart-2.png" alt="" />
                 </div>
                 <div class="cart__title cart__title--color">
                   Samurai KL-1.04 Темно-коричневый
@@ -571,6 +673,7 @@
                 <div class="cart__coin-old">
                   <span>27 000 ₽</span>
                   <img
+                    loading="lazy"
                     class="cart__coin-img"
                     src="img/cart/line-summ.svg"
                     alt=""
@@ -609,6 +712,7 @@
             </div>
           </div>
           <img
+            loading="lazy"
             class="drive__img"
             src="img/drive/drive-back-mobile.jpg"
             alt=""
@@ -636,8 +740,18 @@
                   </div>
                 </div>
                 <div class="facts__open facts__open--style">
-                  <img src="img/facts/plus.svg" class="facts__plus" alt="" />
-                  <img src="img/facts/minus.svg" class="facts__minus" alt="" />
+                  <img
+                    loading="lazy"
+                    src="img/facts/plus.svg"
+                    class="facts__plus"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/facts/minus.svg"
+                    class="facts__minus"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="facts__answer facts__answer--color">
@@ -654,8 +768,18 @@
                   <div class="facts__text">Миллион вариантов</div>
                 </div>
                 <div class="facts__open facts__open--style">
-                  <img src="img/facts/plus.svg" class="facts__plus" alt="" />
-                  <img src="img/facts/minus.svg" class="facts__minus" alt="" />
+                  <img
+                    loading="lazy"
+                    src="img/facts/plus.svg"
+                    class="facts__plus"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/facts/minus.svg"
+                    class="facts__minus"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="facts__answer facts__answer--color">
@@ -672,8 +796,18 @@
                   <div class="facts__text">Полный производственный цикл</div>
                 </div>
                 <div class="facts__open facts__open--style">
-                  <img src="img/facts/plus.svg" class="facts__plus" alt="" />
-                  <img src="img/facts/minus.svg" class="facts__minus" alt="" />
+                  <img
+                    loading="lazy"
+                    src="img/facts/plus.svg"
+                    class="facts__plus"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/facts/minus.svg"
+                    class="facts__minus"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="facts__answer facts__answer--color">
@@ -690,8 +824,18 @@
                   <div class="facts__text">Японские инженеры</div>
                 </div>
                 <div class="facts__open facts__open--style">
-                  <img src="img/facts/plus.svg" class="facts__plus" alt="" />
-                  <img src="img/facts/minus.svg" class="facts__minus" alt="" />
+                  <img
+                    loading="lazy"
+                    src="img/facts/plus.svg"
+                    class="facts__plus"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/facts/minus.svg"
+                    class="facts__minus"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="facts__answer facts__answer--color">
@@ -710,8 +854,18 @@
                   </div>
                 </div>
                 <div class="facts__open facts__open--style">
-                  <img src="img/facts/plus.svg" class="facts__plus" alt="" />
-                  <img src="img/facts/minus.svg" class="facts__minus" alt="" />
+                  <img
+                    loading="lazy"
+                    src="img/facts/plus.svg"
+                    class="facts__plus"
+                    alt=""
+                  />
+                  <img
+                    loading="lazy"
+                    src="img/facts/minus.svg"
+                    class="facts__minus"
+                    alt=""
+                  />
                 </div>
               </div>
               <div class="facts__answer facts__answer--color">
@@ -731,22 +885,22 @@
             <div class="clients__title">Наши клиенты</div>
             <div class="clients__img">
               <div class="clients__img-1">
-                <img src="img/clients/rzd.png" alt="#" />
+                <img loading="lazy" src="img/clients/rzd.png" alt="#" />
               </div>
               <div class="clients__img-2">
-                <img src="img/clients/nornickel.png" alt="#" />
+                <img loading="lazy" src="img/clients/nornickel.png" alt="#" />
               </div>
               <div class="clients__img-3">
-                <img src="img/clients/bashneft.png" alt="#" />
+                <img loading="lazy" src="img/clients/bashneft.png" alt="#" />
               </div>
               <div class="clients__img-4">
-                <img src="img/clients/roscosmos.png" alt="#" />
+                <img loading="lazy" src="img/clients/roscosmos.png" alt="#" />
               </div>
               <div class="clients__img-5">
-                <img src="img/clients/homecredit.png" alt="#" />
+                <img loading="lazy" src="img/clients/homecredit.png" alt="#" />
               </div>
               <div class="clients__img-6">
-                <img src="img/clients/pobeda.svg" alt="#" />
+                <img loading="lazy" src="img/clients/pobeda.svg" alt="#" />
               </div>
             </div>
           </div>
@@ -798,7 +952,11 @@
           </form>
         </div>
         <div class="form__decoration">
-          <img src="img/form/form-hands.png" alt="" />
+          <picture loading="lazy">
+            <source srcset="img/form/form-hands.webp" type="image/webp" />
+            <source srcset="img/form/form-hands.png" type="image/png" />
+            <img src="img/form/form-hands.png" alt="" />
+          </picture>
         </div>
       </div>
     </section>
@@ -816,7 +974,7 @@
             <div class="footer__logo">
               <a href="#" class="footer-logo">
                 <div class="footer-logo__img">
-                  <img src="img/footer/logo.png" alt="" />
+                  <img loading="lazy" src="img/footer/logo.png" alt="" />
                 </div>
                 <div class="footer-logo__text footer-logo__text--color">
                   Кресла Samurai
@@ -841,7 +999,7 @@
             <div class="footer-contacts__wrapper">
               <div class="footer-contacts__item">
                 <div class="footer-contacts__img">
-                  <img src="img/footer/phone.svg" alt="" />
+                  <img loading="lazy" src="img/footer/phone.svg" alt="" />
                 </div>
                 <a
                   href="tel:+74952210675"
@@ -856,7 +1014,7 @@
               </div>
               <div class="footer-contacts__item">
                 <div class="footer-contacts__img">
-                  <img src="img/footer/mail.svg" alt="" />
+                  <img loading="lazy" src="img/footer/mail.svg" alt="" />
                 </div>
                 <a
                   href="mailto:zakaz@kresla-samurai.ru"
@@ -871,7 +1029,7 @@
               </div>
               <div class="footer-contacts__item">
                 <div class="footer-contacts__img">
-                  <img src="img/footer/adress.svg" alt="" />
+                  <img loading="lazy" src="img/footer/adress.svg" alt="" />
                 </div>
                 <a
                   href="https://yandex.ru/maps/-/CCUFYLWY1A"
@@ -889,7 +1047,7 @@
     <div class="modal modal--style">
       <div class="modal__inner modal__inner--style">
         <div class="modal__done">
-          <img src="img/modal/done.svg" alt="" />
+          <img loading="lazy" src="img/modal/done.svg" alt="" />
         </div>
         <div class="modal__text">
           <div class="modal__header">Ваша заявка принята</div>
@@ -899,6 +1057,7 @@
         </div>
       </div>
     </div>
+    <script src="js/script.min.js"></script>
     <script>
       AOS.init();
     </script>

@@ -29,38 +29,48 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   //maps
+  let flag = 0;
 
-  let center = [55.67555451365476, 37.50218546744996];
-  function init() {
-    let map = new ymaps.Map("map-element", {
-      center: center,
-      zoom: 11,
-    });
+  window.addEventListener("scroll", function () {
+    let scrollY = window.scrollY;
+    let mapOffset = document.querySelector(".map").offsetTop;
 
-    let playsmark = new ymaps.Placemark(
-      center,
-      {},
-      {
-        iconLayout: "default#image",
-        iconImageHref: "img/maps/mark-cart.svg",
-        iconImageSize: [70, 100],
-        iconImageOffset: [-40, 70],
+    if (scrollY >= mapOffset - 500 && flag == 0) {
+      let center = [55.67555451365476, 37.50218546744996];
+      function init() {
+        let map = new ymaps.Map("map-element", {
+          center: center,
+          zoom: 11,
+        });
+
+        let playsmark = new ymaps.Placemark(
+          center,
+          {},
+          {
+            iconLayout: "default#image",
+            iconImageHref: "img/maps/mark-cart.svg",
+            iconImageSize: [70, 100],
+            iconImageOffset: [-40, 70],
+          }
+        );
+
+        map.controls.remove("geolocationControl"); // удаляем геолокацию
+        map.controls.remove("searchControl"); // удаляем поиск
+        map.controls.remove("trafficControl"); // удаляем контроль трафика
+        map.controls.remove("typeSelector"); // удаляем тип
+        map.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove("zoomControl"); // удаляем контрол зуммирования
+        map.controls.remove("rulerControl"); // удаляем контрол правил
+        map.behaviors.disable(["scrollZoom"]); // отключаем скролл карты
+
+        map.geoObjects.add(playsmark);
       }
-    );
 
-    map.controls.remove("geolocationControl"); // удаляем геолокацию
-    map.controls.remove("searchControl"); // удаляем поиск
-    map.controls.remove("trafficControl"); // удаляем контроль трафика
-    map.controls.remove("typeSelector"); // удаляем тип
-    map.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
-    map.controls.remove("zoomControl"); // удаляем контрол зуммирования
-    map.controls.remove("rulerControl"); // удаляем контрол правил
-    map.behaviors.disable(["scrollZoom"]); // отключаем скролл карты
+      ymaps.ready(init);
 
-    map.geoObjects.add(playsmark);
-  }
-
-  ymaps.ready(init);
+      flag = 1;
+    }
+  });
 
   //mobile menu
   const headerMobile = document.querySelector(".header-mobile"),
@@ -118,64 +128,68 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-//iform send
+  //iform send
 
-  const form = document.querySelector('.form__elements'),
-        telSelector = form.querySelector('input[type="tel"]'),
-        inputMask = new Inputmask('+7 (999) 999-99-99');
+  const form = document.querySelector(".form__elements"),
+    telSelector = form.querySelector('input[type="tel"]'),
+    inputMask = new Inputmask("+7 (999) 999-99-99");
 
   inputMask.mask(telSelector);
 
-  const validation = new JustValidate('.form__elements');
+  const validation = new JustValidate(".form__elements");
 
   validation
-    .addField('#name', [{
-      rule: 'minLength',
-      value: 2,
-      errorMessage: 'Колличество символов меньше 2!',
-    },
-    {
-      rule: 'maxLength',
-      value: 30,
-      errorMessage: 'Колличество символов больше 30!'
-    },
-    {
-      rule: 'required',
-      value: 'true',
-      errorMessage: 'Введите имя!'
-    }
-    ])
-
-    .addField('#check', [{
-      rule: 'required',
-      value: 'true',
-      errorMessage: 'Подтвердите согласие на обработку личных данных!'
-    }
-    ])
-
-    .addField('#telephone', [{
-      rule: 'required',
-      value: 'true',
-      errorMessage: 'Введите номер телефона!'
-    },
-    {
-      rule: 'function',
-      validator: function () {
-        const phone = telSelector.inputmask.unmaskedvalue();
-        return phone.length === 10;
+    .addField("#name", [
+      {
+        rule: "minLength",
+        value: 2,
+        errorMessage: "Колличество символов меньше 2!",
       },
-      errorMessage: 'Введите корректный номер телефона!'
-    }
-    ]).onSuccess((e) => {
-      if (document.querySelector('#check').checked) {
+      {
+        rule: "maxLength",
+        value: 30,
+        errorMessage: "Колличество символов больше 30!",
+      },
+      {
+        rule: "required",
+        value: "true",
+        errorMessage: "Введите имя!",
+      },
+    ])
+
+    .addField("#check", [
+      {
+        rule: "required",
+        value: "true",
+        errorMessage: "Подтвердите согласие на обработку личных данных!",
+      },
+    ])
+
+    .addField("#telephone", [
+      {
+        rule: "required",
+        value: "true",
+        errorMessage: "Введите номер телефона!",
+      },
+      {
+        rule: "function",
+        validator: function () {
+          const phone = telSelector.inputmask.unmaskedvalue();
+          return phone.length === 10;
+        },
+        errorMessage: "Введите корректный номер телефона!",
+      },
+    ])
+    .onSuccess((e) => {
+      if (document.querySelector("#check").checked) {
         const sendForm = (data) => {
-          return fetch('mail.php', {
-            method: 'POST',
+          return fetch("mail.php", {
+            method: "POST",
             body: JSON.stringify(data),
             headers: {
-              'Content-type': 'application/json; charset=UTF-8'
-            }
-          }).then(res => res.json());
+              "Content-type": "application/json; charset=UTF-8",
+            },
+          }).then((res) => res.json());
         };
 
         const dataForm = new FormData(e.target);
@@ -185,15 +199,14 @@ window.addEventListener("DOMContentLoaded", () => {
           user[key] = val;
         });
 
-        sendForm(user).then(data => {
-           alert("Спасибо! Наш менеджер свяжется с Вами в близжайшее время!")
+        sendForm(user).then((data) => {
+          alert("Спасибо! Наш менеджер свяжется с Вами в близжайшее время!");
           //console.log("Письмо успешно отправлено!");
         });
 
         e.target.reset();
-     }
-
-  });
+      }
+    });
 
   //accordeon
 
